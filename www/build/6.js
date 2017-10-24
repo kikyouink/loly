@@ -1,14 +1,14 @@
 webpackJsonp([6],{
 
-/***/ 264:
+/***/ 267:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactPageModule", function() { return ContactPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainPageModule", function() { return MainPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact__ = __webpack_require__(274);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__main__ = __webpack_require__(278);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,33 +18,34 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ContactPageModule = (function () {
-    function ContactPageModule() {
+var MainPageModule = (function () {
+    function MainPageModule() {
     }
-    return ContactPageModule;
+    return MainPageModule;
 }());
-ContactPageModule = __decorate([
+MainPageModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__contact__["a" /* ContactPage */],
+            __WEBPACK_IMPORTED_MODULE_2__main__["a" /* MainPage */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__contact__["a" /* ContactPage */]),
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__main__["a" /* MainPage */]),
         ],
     })
-], ContactPageModule);
+], MainPageModule);
 
-//# sourceMappingURL=contact.module.js.map
+//# sourceMappingURL=main.module.js.map
 
 /***/ }),
 
-/***/ 274:
+/***/ 278:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MainPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(99);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -56,49 +57,53 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var ContactPage = (function () {
-    function ContactPage(navCtrl, navParams) {
+
+
+
+/**
+ * Generated class for the MainPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var MainPage = (function () {
+    function MainPage(navCtrl, navParams, menuCtrl, app, statusBar) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.items = {};
-        this.isExist = false;
-        this.url = 'http://10.11.163.178:3000/';
-        this.socket = io(this.url);
+        this.menuCtrl = menuCtrl;
+        this.app = app;
+        this.statusBar = statusBar;
+        this.username = '';
     }
-    ContactPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ContactPage');
+    MainPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad MainPage');
+        console.log(this.navParams.get('username'));
+        this.username = this.navParams.get('username');
     };
-    ContactPage.prototype.getItems = function (ev) {
-        var _this = this;
-        // Reset items back to all of the items
-        // set val to the value of the searchbar
-        var val = ev.target.value;
-        this.socket.emit('search', { username: val });
-        this.socket.on('searchResult', function (userdata) {
-            if (userdata == '无结果') {
-                _this.isExist = false;
-            }
-            else {
-                _this.isExist = true;
-                _this.items = {
-                    nickname: userdata.nickname,
-                    headimg: 'http://q2.qlogo.cn/headimg_dl?bs=2578443177&dst_uin=' + userdata.username + '&dst_uin=' + userdata.username + '&;dst_uin=' + userdata.username + '&spec=100&url_enc=0&referer=bu_interface&term_type=PC'
-                };
-            }
+    MainPage.prototype.toggleMenu = function () {
+        this.menuCtrl.toggle();
+        console.log('打开菜单');
+    };
+    MainPage.prototype.chat = function (formname, toname) {
+        this.app.getRootNav().push('ChatPage', {
+            from: formname,
+            to: toname,
         });
     };
-    ContactPage.prototype.starTalking = function (username) {
-    };
-    return ContactPage;
+    return MainPage;
 }());
-ContactPage = __decorate([
+MainPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-contact',template:/*ion-inline-start:"D:\12\myapp\src\pages\contact\contact.html"*/'<!--\n  Generated template for the ContactPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header no-border>\n  <ion-toolbar color=\'bili\'>\n    <ion-title>好友</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n\n<ion-content padding>\n  <ion-searchbar (ionInput)="getItems($event)" placeholder="添加好友..."></ion-searchbar>\n  <ion-list>\n\n    <button ion-item (click)=\'starTalking()\' *ngIf="isExist">\n      <ion-avatar item-start>\n        <img src={{items.headimg}}>\n      </ion-avatar>\n      <h2>{{ items.nickname }}</h2>\n    </button>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"D:\12\myapp\src\pages\contact\contact.html"*/,
+        selector: 'page-main',template:/*ion-inline-start:"D:\12\myapp\src\pages\main\main.html"*/'<!--\n  Generated template for the MainPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header no-border>\n    <ion-toolbar color=\'bili\'>\n        <ion-title>欢迎！{{username}}</ion-title>  \n      </ion-toolbar>\n</ion-header>\n\n\n<ion-content padding>\n    <ion-list-header>\n        我的好友\n    </ion-list-header>\n  <ion-list  no-lines>\n    \n    <button ion-item (click)="chat(username,\'123456\')">\n      <ion-avatar item-start>\n        <img src="assets/img/avatar/1.jpg">\n      </ion-avatar>\n      <h2 #to1>William</h2>\n      <p>Hello,nice to meet you。</p>\n    </button>\n    <button ion-item (click)="chat(username,\'2578443177\')">\n      <ion-avatar item-start>\n        <img src="assets/img/avatar/2.jpg">\n      </ion-avatar>\n      <h2 #to2>Lera</h2>\n      <p>see you later!</p>\n    </button>\n    <button ion-item (click)="chat(username,\'123456789\',socket)">\n      <ion-avatar item-start>\n        <img src="assets/img/avatar/3.jpg">\n      </ion-avatar>\n      <h2>Kristen</h2>\n      <p>wait a monment...</p>\n    </button>\n  </ion-list>\n  <ion-list>\n    <ion-list-header>\n        群聊\n    </ion-list-header>\n    <button ion-item (click)="ss()">\n      <ion-avatar item-start>\n        <img src="assets/img/avatar/flower.png">\n      </ion-avatar>\n      <h2>Job</h2>\n      <p>Manager：send the report to me</p>\n    </button>\n  </ion-list>\n  <ion-fab bottom left>\n      <button ion-fab color="bili" margin-bottom id="menuBtn"><ion-icon name="add" color="white" menuToggle></ion-icon></button>\n  </ion-fab>\n</ion-content>\n'/*ion-inline-end:"D:\12\myapp\src\pages\main\main.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
-], ContactPage);
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* MenuController */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* App */],
+        __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]])
+], MainPage);
 
-//# sourceMappingURL=contact.js.map
+//# sourceMappingURL=main.js.map
 
 /***/ })
 

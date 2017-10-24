@@ -1,0 +1,57 @@
+.theme-dark {
+
+    //同时改变bgcolor和cololr，一般是容器
+    ion-header,ion-content,ion-footer,ion-item,ion-label {
+      background-color: #222A37 !important;
+      color: #9EAEC8 !important;
+    }
+    .input-wrapper,.item{
+      background-color: #222A37 !important;
+      color: #9EAEC8 !important;
+    }
+
+    //所有bg改变
+    .tabbar{
+      background: #222A37 !important;
+    }
+    .toolbar-background{
+      background-color: #222A37 !important;
+    }
+    #headDiv{
+      background: #222A37 ;
+    }
+    
+    //所有color改变
+    h1,h2,h3,h4,h5,h6,p,body,div {
+      color: #9EAEC8;
+    }
+    .toolbar-title{
+      color: #9EAEC8;
+    }
+    .tab-button[aria-selected=true] .tab-button-icon{
+      color: #9EAEC8 !important;
+    }
+    .tab-button[aria-selected=true] {
+        color: #9EAEC8 !important;
+    }
+    .tab-button-icon{
+        color: gray !important;
+    }
+    .tab-button{
+      color: gray !important;
+    } 
+    //所有bg-color改变
+
+    ion-list {
+      background-color: #222A37;
+    }
+    .button-round{
+      background-color: #9EAEC8 !important;
+    }
+    .fab{
+      background-color: #9EAEC8 !important;
+    }
+
+  }
+  
+  

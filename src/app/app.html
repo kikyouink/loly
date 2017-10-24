@@ -1,3 +1,4 @@
+<div class="{{global.state['theme']}}">
 <ion-menu [content]="content">
   <ion-content>
     <div id='headDiv'>
@@ -15,9 +16,11 @@
   <ion-footer>
     <ion-toolbar >
       <button ion-button clear menuClose color='gray' style="width:45%" ><ion-icon name="settings"></ion-icon>设置</button>
-      <button ion-button clear menuClose color='gray' style="width:45%"><ion-icon name="moon"></ion-icon>夜间</button>
+      <button ion-button clear menuClose color='gray' style="width:45%" (click)="moveTo('ThemePage')"><ion-icon name="moon"></ion-icon>夜间</button>
+
     </ion-toolbar>
   </ion-footer>
 </ion-menu>
 
 <ion-nav [root]="rootPage" #content></ion-nav>
+</div>

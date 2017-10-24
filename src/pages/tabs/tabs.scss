@@ -1,10 +1,10 @@
 
 .tabs-md .tab-button[aria-selected=true] .tab-button-icon{
-    color: color($colors,bili) !important;
+    color: color($colors,bili) ;
 }
 .tabs-md .tab-button[aria-selected=true] {
-    color: color($colors,bili)!important;
+    color: color($colors,bili);
 }
 .tab-button-icon{
-    color: pink !important;
+    color: pink;
 }
