@@ -33199,8 +33199,7 @@ ion-navbar.toolbar {
   height: auto;
   border-radius: 100%;
   border: 3px white solid;
-  margin-top: calc(50%);
-  position: absolute;
+  margin-top: 75px;
 }
 
 .mm {
