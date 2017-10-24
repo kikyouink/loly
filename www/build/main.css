@@ -33206,7 +33206,7 @@ ion-navbar.toolbar {
   color: gray;
 }
 
-.platform-android ion-header {
+ion-header {
   padding-top: 20px;
   background: #f97398;
 }
