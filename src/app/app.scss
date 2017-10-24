@@ -10,9 +10,18 @@
     height: auto;
     border-radius: 100%;
     border: 3px white solid;
-    margin-top:75px;
-    //position: absolute;
-    //display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px; 
+    margin-left: -50px;
+}
+#headDiv{
+    text-align: center;
+    height:30%;
+    background:#f97398;
+    position: relative;
+
 }
 .mm{
     color:gray
