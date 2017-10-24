@@ -1,0 +1,56 @@
+<!--
+  Generated template for the MainPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+    <ion-toolbar color='bili'>
+        <ion-title>欢迎！{{username}}</ion-title>  
+      </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list-header>
+        我的好友
+    </ion-list-header>
+  <ion-list  no-lines>
+    <button ion-item (click)="chat(username,'123456')">
+      <ion-avatar item-start>
+        <img src="assets/img/avatar/1.jpg">
+      </ion-avatar>
+      <h2 #to1>William</h2>
+      <p>Hello,nice to meet you。</p>
+    </button>
+    <button ion-item (click)="chat(username,'2578443177')">
+      <ion-avatar item-start>
+        <img src="assets/img/avatar/2.jpg">
+      </ion-avatar>
+      <h2 #to2>Lera</h2>
+      <p>see you later!</p>
+    </button>
+    <button ion-item (click)="chat(username,'123456789',socket)">
+      <ion-avatar item-start>
+        <img src="assets/img/avatar/3.jpg">
+      </ion-avatar>
+      <h2>Kristen</h2>
+      <p>wait a monment...</p>
+    </button>
+  </ion-list>
+  <ion-list>
+    <ion-list-header>
+        群聊
+    </ion-list-header>
+    <button ion-item (click)="ss()">
+      <ion-avatar item-start>
+        <img src="assets/img/avatar/flower.png">
+      </ion-avatar>
+      <h2>Job</h2>
+      <p>Manager：send the report to me</p>
+    </button>
+  </ion-list>
+  <ion-fab bottom left>
+      <button ion-fab color="bili" margin-bottom><ion-icon name="add" color="white" menuToggle></ion-icon></button>
+  </ion-fab>
+</ion-content>

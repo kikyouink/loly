@@ -1,0 +1,26 @@
+*{
+    font-family: 'Microsoft YaHei';
+    //隐藏滚动条
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+.head{
+    width: 100px;
+    height: auto;
+    border-radius: 100%;
+    border: 3px white solid;
+    margin-top:calc(50% );
+    position: absolute;
+    //display: block;
+}
+.mm{
+    color:gray
+}
+.platform-android {
+    ion-header {
+      padding-top: $cordova-md-statusbar-padding;
+      background:color($colors,bili);
+    }
+}
+

@@ -1,0 +1,5 @@
+
+<ion-tabs>
+    <ion-tab *ngFor="let tabRoot of tabRoots" [root]="tabRoot.root" tabTitle="{{tabRoot.tabTitle}}" tabIcon="{{tabRoot.tabIcon}}" [rootParams]="info"></ion-tab>
+</ion-tabs>
+

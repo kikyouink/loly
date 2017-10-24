@@ -1,0 +1,23 @@
+<ion-menu [content]="content">
+  <ion-content>
+    <div style="text-align: center;height:400px;background:#f97398">
+      <img src="assets/img/avatar/girl-avatar.png" class="head">
+    </div>
+    <ion-list no-lines>
+      <ion-list-header>
+        菜单
+      </ion-list-header>
+      <button ion-item menuClose class="mm" (click)="moveTo('PersonPage')" *ngFor="let item of items">
+        <ion-icon name={{item.icon}} item-start></ion-icon>{{item.name}}
+      </button>
+    </ion-list>
+  </ion-content>
+  <ion-footer>
+    <ion-toolbar >
+      <button ion-button clear menuClose color='gray' style="width:45%" ><ion-icon name="settings"></ion-icon>设置</button>
+      <button ion-button clear menuClose color='gray' style="width:45%"><ion-icon name="moon"></ion-icon>夜间</button>
+    </ion-toolbar>
+  </ion-footer>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content></ion-nav>
