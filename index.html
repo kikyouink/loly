@@ -3,10 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Loly</title>
+    <style>
+        #phone{
+            background:url(src/assets/img/background/phone.png) center center no-repeat;
+            background-size: cover;
+            height:800px;
+            width:500px;
+            margin: 0 auto;
+            position: relative;
+        }
+        iframe{
+            position: absolute;
+            top:93px;
+            left:77px;
+            width:346px;
+            height:612px
+        }
+    </style>
 </head>
 <body>
-    <section style="text-align:center">
-        <iframe src="www/index.html" frameborder="0" style="width:412px;height:732px"></iframe>
+    <section id='phone'>
+        <iframe src="www/index.html" frameborder="0" seamless></iframe>
     </section>
 </body>
 </html>>
