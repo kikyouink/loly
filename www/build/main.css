@@ -33248,6 +33248,14 @@ ion-header {
   color: #9EAEC8;
 }
 
+.theme-dark ion-list-header {
+  border: none;
+}
+
+.theme-dark span.button-inner {
+  color: #9EAEC8;
+}
+
 .theme-dark .toolbar-title {
   color: #9EAEC8;
 }
@@ -33261,7 +33269,7 @@ ion-header {
 }
 
 .theme-dark .tab-button-icon {
-  color: gray !important;
+  color: #5b5e7f !important;
 }
 
 .theme-dark .tab-button {
@@ -33273,11 +33281,11 @@ ion-header {
 }
 
 .theme-dark .button-round {
-  background-color: #9EAEC8 !important;
+  background-color: #2f4467 !important;
 }
 
 .theme-dark .fab {
-  background-color: #9EAEC8 !important;
+  background-color: #2f4467 !important;
 }
 
 .theme-dark ion-header, .theme-dark ion-content, .theme-dark ion-footer, .theme-dark ion-item, .theme-dark ion-label {
@@ -33306,6 +33314,14 @@ ion-header {
   color: #9EAEC8;
 }
 
+.theme-dark ion-list-header {
+  border: none;
+}
+
+.theme-dark span.button-inner {
+  color: #9EAEC8;
+}
+
 .theme-dark .toolbar-title {
   color: #9EAEC8;
 }
@@ -33319,7 +33335,7 @@ ion-header {
 }
 
 .theme-dark .tab-button-icon {
-  color: gray !important;
+  color: #5b5e7f !important;
 }
 
 .theme-dark .tab-button {
@@ -33331,11 +33347,11 @@ ion-header {
 }
 
 .theme-dark .button-round {
-  background-color: #9EAEC8 !important;
+  background-color: #2f4467 !important;
 }
 
 .theme-dark .fab {
-  background-color: #9EAEC8 !important;
+  background-color: #2f4467 !important;
 }
 
 page-main ion-avatar {
