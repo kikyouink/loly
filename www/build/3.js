@@ -66,15 +66,37 @@ var PersonPage = (function () {
     function PersonPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.items = [
+            {
+                id: 1,
+                name: '张三',
+            },
+            {
+                id: 2,
+                name: '李四',
+            },
+            {
+                id: 3,
+                name: '王五',
+            },
+            {
+                id: 4,
+                name: '赵六',
+            }
+        ];
     }
     PersonPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad PersonPage');
+    };
+    PersonPage.prototype.trackById = function (index, item) { return item['id']; };
+    PersonPage.prototype.changeId = function () {
+        this.items[0]['id'] = 100;
     };
     return PersonPage;
 }());
 PersonPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-person',template:/*ion-inline-start:"D:\12\myapp\src\pages\person\person.html"*/'<!--\n  Generated template for the PersonPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>person</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"D:\12\myapp\src\pages\person\person.html"*/,
+        selector: 'page-person',template:/*ion-inline-start:"D:\12\myapp\src\pages\person\person.html"*/'<!--\n  Generated template for the PersonPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>person</ion-title>\n  </ion-navbar>\n\n</ion-header>\n<ion-content padding>\n    <ion-list >\n        <ion-item *ngFor="let item of items;trackBy: trackById" >\n          {{item.id}}{{item.name}}\n        </ion-item>\n      </ion-list>\n      <button ion-button (click)="changeId()">点击</button>\n</ion-content>\n'/*ion-inline-end:"D:\12\myapp\src\pages\person\person.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
 ], PersonPage);

@@ -11,8 +11,11 @@
   </ion-navbar>
 
 </ion-header>
-
-
 <ion-content padding>
-
+    <ion-list >
+        <ion-item *ngFor="let item of items;trackBy: trackById" >
+          {{item.id}}{{item.name}}
+        </ion-item>
+      </ion-list>
+      <button ion-button (click)="changeId()">点击</button>
 </ion-content>

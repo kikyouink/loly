@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {ToastService} from '../../provider/toast.service';
 import {SocketService} from '../../provider/socket.service';
 
 @IonicPage()
@@ -14,7 +13,6 @@ export class SignPage {
         public navCtrl: NavController,
         public navParams: NavParams,
         public ss:SocketService,
-        public toastCtrl: ToastService,
     ) {
     }
 
@@ -30,16 +28,15 @@ export class SignPage {
         var time=setInterval(()=>{
             if(ss.sign_result==undefined) return;
             if(ss.sign_result==true){
+                this.ss.sendName(name);
                 this.navCtrl.push('TabsPage', {
                     username: name
                 });
-                this.toastCtrl.create('注册成功');
             }
             else{
                 setTimeout(()=>{
                     this.navCtrl.pop();
                 },2000);
-                this.toastCtrl.create('此用户已存在');
             }
             clearInterval(time);
         },500);

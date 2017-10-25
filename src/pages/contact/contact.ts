@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {SocketService} from '../../provider/socket.service';
 
 /**
  * Generated class for the ContactPage page.
@@ -7,43 +8,29 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-declare var io;
 @IonicPage()
 @Component({
   selector: 'page-contact',
   templateUrl: 'contact.html',
 })
 export class ContactPage {
-  items: object={
-  };
+  items: object;
   isExist:boolean=false;
-  url:string='http://10.11.163.178:3000/';
-  socket:any=io(this.url);
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  n:number=100;
+  constructor(public navCtrl: NavController, public navParams: NavParams,public ss:SocketService,) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ContactPage');
   }
 
-
   getItems(ev: any) {
-    // Reset items back to all of the items
-    // set val to the value of the searchbar
     let val = ev.target.value;
-    this.socket.emit('search', { username: val});
-    this.socket.on('searchResult', (userdata) => {       
-        if(userdata=='无结果'){
-          this.isExist=false;
-        }
-        else{
-          this.isExist=true;
-          this.items={
-            nickname:userdata.nickname,
-            headimg:'http://q2.qlogo.cn/headimg_dl?bs=2578443177&dst_uin='+userdata.username+'&dst_uin='+userdata.username+'&;dst_uin='+userdata.username+'&spec=100&url_enc=0&referer=bu_interface&term_type=PC'
-          }
-        }
-    });
+    let ss=this.ss;
+    ss.search(val);
+    console.log(ss.search_result);
+    if(ss.search_result=='none') this.items=null;
+    else this.items=ss.search_result;
   }
   starTalking(username){
     
