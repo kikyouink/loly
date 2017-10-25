@@ -173,8 +173,8 @@ var SocketService = (function () {
     //inited:boolean=false;
     function SocketService(toastCtrl) {
         this.toastCtrl = toastCtrl;
-        this.url = 'http://10.11.163.178:3000/';
-        //url:string='http://111.231.216.168:3000/';
+        //url:string='http://10.11.163.178:3000/';
+        this.url = 'http://111.231.216.168:3000/';
         this.socket = io(this.url);
         this.n = 0;
     }
