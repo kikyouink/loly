@@ -17,7 +17,7 @@
 
     <button ion-item (click)='starTalking()' *ngIf="isExist">
       <ion-avatar item-start>
-        <img src={{items.headimg}}>
+        <img [src]="items.headimg">
       </ion-avatar>
       <h2>{{ items.nickname }}</h2>
     </button>

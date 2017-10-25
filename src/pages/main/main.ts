@@ -18,6 +18,8 @@ declare var io;
 })
 export class MainPage {
   username:string='';
+  items:object[];
+  items2:object[];
   constructor(public navCtrl: NavController, 
     public navParams: NavParams,
     public menuCtrl: MenuController,
@@ -29,6 +31,34 @@ export class MainPage {
     console.log('ionViewDidLoad MainPage');
     console.log(this.navParams.get('username'));
     this.username=this.navParams.get('username');
+    this.items=[
+      {
+        username:'2578443177',
+        src:'assets/img/avatar/1.jpg',
+        nickname:'William',
+        lastWords:'Hello,nice to meet you。',
+      },
+      {
+        username:'123456',
+        src:'assets/img/avatar/2.jpg',
+        nickname:'Lera',
+        lastWords:'see you later!',
+      },
+      {
+        username:'123456789',
+        src:'assets/img/avatar/3.jpg',
+        nickname:'Kristen',
+        lastWords:'wait a monment...',
+      },
+    ];
+    this.items2=[
+      {
+        groupname:'2578443177',
+        src:'assets/img/avatar/flower.png',
+        nickname:'Job',
+        lastWords:'Manager：send the report to me',
+      }
+    ]
   }
   toggleMenu() {
     this.menuCtrl.toggle();

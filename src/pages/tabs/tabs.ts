@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {SocketService} from '../../provider/socket.service';
 
 @IonicPage()
 @Component({
@@ -12,7 +11,7 @@ export class TabsPage {
   info:object={
     username:this.navParams.get('username')
   };
-  constructor(public navParams: NavParams,public ss:SocketService) {
+  constructor(public navParams: NavParams) {
     this.tabRoots = [
       {
         root: 'MainPage',
@@ -33,7 +32,5 @@ export class TabsPage {
   }
   ionViewDidLoad() {
     console.log(this.info);
-    if(this.info['username']!=null) this.ss.sendName(this.info['username']);
-    this.ss.waitMsg();
   }
 }

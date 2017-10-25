@@ -79,7 +79,7 @@ var NewsPage = (function () {
 }());
 NewsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-news',template:/*ion-inline-start:"D:\12\myapp\src\pages\news\news.html"*/'<!--\n  Generated template for the NewsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header no-border>\n    <ion-toolbar color=\'bili\'>\n        <ion-title>动态</ion-title>  \n      </ion-toolbar>\n</ion-header>\n\n\n<ion-content padding>\n  <button ion-button full round color="bili" (click)="loginOut()">登出</button>\n</ion-content>\n'/*ion-inline-end:"D:\12\myapp\src\pages\news\news.html"*/,
+        selector: 'page-news',template:/*ion-inline-start:"D:\12\myapp\src\pages\news\news.html"*/'<ion-header no-border>\n    <ion-toolbar color=\'bili\'>\n        <ion-title>动态</ion-title>  \n      </ion-toolbar>\n</ion-header>\n\n\n<ion-content padding>\n  <button ion-button full round color="bili" (click)="loginOut()">登出</button>\n</ion-content>\n'/*ion-inline-end:"D:\12\myapp\src\pages\news\news.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* App */]])
 ], NewsPage);
