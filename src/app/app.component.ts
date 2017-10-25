@@ -44,4 +44,7 @@ export class MyApp {
   moveTo(page){
     this.nav.push(page);
   }
+  setTheme(theme){
+    this.global.set('theme', theme);
+  }
 }
