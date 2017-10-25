@@ -174,8 +174,8 @@ var SocketService = (function () {
     function SocketService(toastCtrl) {
         this.toastCtrl = toastCtrl;
         //url:string='10.11.163.178:3000';
-        this.url = '111.231.216.168:3000';
-        this.socket = io(this.url);
+        this.url = 'http://111.231.216.168:3000/';
+        this.socket = io(this.url, { secure: true });
         this.n = 0;
     }
     SocketService.prototype.sign = function (info) {
