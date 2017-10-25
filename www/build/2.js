@@ -45,6 +45,7 @@ TabsPageModule = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__provider_socket_service__ = __webpack_require__(193);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -56,9 +57,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var TabsPage = (function () {
-    function TabsPage(navParams) {
+    function TabsPage(navParams, ss) {
         this.navParams = navParams;
+        this.ss = ss;
         this.info = {
             username: this.navParams.get('username')
         };
@@ -82,15 +85,19 @@ var TabsPage = (function () {
     }
     TabsPage.prototype.ionViewDidLoad = function () {
         console.log(this.info);
+        if (this.info['username'] != null)
+            this.ss.sendName(this.info['username']);
+        this.ss.waitMsg();
     };
     return TabsPage;
 }());
 TabsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"D:\12\myapp\src\pages\tabs\tabs.html"*/'\n<ion-tabs>\n    <ion-tab *ngFor="let tabRoot of tabRoots" [root]="tabRoot.root" tabTitle="{{tabRoot.tabTitle}}" tabIcon="{{tabRoot.tabIcon}}" [rootParams]="info"></ion-tab>\n</ion-tabs>\n\n'/*ion-inline-end:"D:\12\myapp\src\pages\tabs\tabs.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__provider_socket_service__["a" /* SocketService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__provider_socket_service__["a" /* SocketService */]) === "function" && _b || Object])
 ], TabsPage);
 
+var _a, _b;
 //# sourceMappingURL=tabs.js.map
 
 /***/ })

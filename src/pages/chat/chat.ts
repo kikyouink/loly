@@ -20,8 +20,6 @@ export class ChatPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public app :App,public ss:SocketService) {
   }
   ionViewDidLoad() {
-    this.ss.sendName(this.from);
-    this.ss.waitMsg();
     console.log('ionViewDidLoad ChatPage');
   }
   send(msg){

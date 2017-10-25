@@ -22,7 +22,8 @@ export class MainPage {
     public navParams: NavParams,
     public menuCtrl: MenuController,
     public app :App,
-    private statusBar: StatusBar) {
+    private statusBar: StatusBar,
+  ) {
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad MainPage');

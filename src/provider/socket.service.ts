@@ -1,12 +1,17 @@
 import { Injectable } from '@angular/core';
+import { ToastService } from  './toast.service';
 declare const io;
 @Injectable()
 export class SocketService {
-    url:string='http://10.11.163.178:3000/';
+    //url:string='http://10.11.163.178:3000/';
+    url:string='http://111.231.216.168:3000/';
     socket:any=io(this.url);
     sign_result:boolean;
     login_result:boolean;
     nickname:string;
+    constructor(public toastCtrl: ToastService){
+
+    }
     sign(info){
         this.socket.emit('signRq',info);
         this.socket.on('signSuccess', () => {
@@ -40,10 +45,12 @@ export class SocketService {
         this.socket.emit('publicMsg', msg);
     }
     waitMsg(){
-        this.socket.on('privateMsg',function(msg){
+        this.socket.on('privateMsg',(msg)=>{
+            this.toastCtrl.create('私人信息:'+msg);
             console.log(msg);
         })
-        this.socket.on('publicMsg',function(msg){
+        this.socket.on('publicMsg',(msg)=>{
+            this.toastCtrl.create('公共信息:'+msg);
             console.log(msg);
         })
     }

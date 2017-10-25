@@ -109,16 +109,23 @@ AppState = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SocketService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__toast_service__ = __webpack_require__(194);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
 
 var SocketService = (function () {
-    function SocketService() {
-        this.url = 'http://10.11.163.178:3000/';
+    function SocketService(toastCtrl) {
+        this.toastCtrl = toastCtrl;
+        //url:string='http://10.11.163.178:3000/';
+        this.url = 'http://111.231.216.168:3000/';
         this.socket = io(this.url);
     }
     SocketService.prototype.sign = function (info) {
@@ -156,19 +163,24 @@ var SocketService = (function () {
         this.socket.emit('publicMsg', msg);
     };
     SocketService.prototype.waitMsg = function () {
+        var _this = this;
         this.socket.on('privateMsg', function (msg) {
+            _this.toastCtrl.create('私人信息:' + msg);
             console.log(msg);
         });
         this.socket.on('publicMsg', function (msg) {
+            _this.toastCtrl.create('公共信息:' + msg);
             console.log(msg);
         });
     };
     return SocketService;
 }());
 SocketService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])()
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__toast_service__["a" /* ToastService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__toast_service__["a" /* ToastService */]) === "function" && _a || Object])
 ], SocketService);
 
+var _a;
 //# sourceMappingURL=socket.service.js.map
 
 /***/ }),
