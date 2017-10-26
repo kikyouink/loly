@@ -8,7 +8,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { NavController} from 'ionic-angular';
 import {SocketService} from '../provider/socket.service';
 import {ToastService} from '../provider/toast.service';
-import { AppState } from './app.global';
+import { ThemeService } from '../provider/theme.service';
+import { StorageService } from '../provider/storage.service';
 @NgModule({
   declarations: [
     MyApp,
@@ -27,7 +28,8 @@ import { AppState } from './app.global';
     SplashScreen,
     SocketService,
     ToastService,
-    AppState,
+    ThemeService,
+    StorageService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

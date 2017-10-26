@@ -76016,8 +76016,7 @@ function IonicGestureConfig_tsickle_Closure_declarations() {
 //# sourceMappingURL=gesture-config.js.map
 
 /***/ }),
-/* 193 */,
-/* 194 */
+/* 193 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76110,6 +76109,7 @@ SplashScreen = __decorate([
 //# sourceMappingURL=index.js.map
 
 /***/ }),
+/* 194 */,
 /* 195 */,
 /* 196 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
