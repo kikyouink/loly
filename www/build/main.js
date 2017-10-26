@@ -432,7 +432,7 @@ var SocketService = (function () {
     function SocketService(toastCtrl) {
         this.toastCtrl = toastCtrl;
         //url:string='10.11.163.178:3000';
-        this.url = 'http://loly.club:3000/';
+        this.url = 'https://loly.club:3000/';
         this.socket = io(this.url, { secure: true });
         this.n = 0;
     }
@@ -502,9 +502,10 @@ var SocketService = (function () {
 }());
 SocketService = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__toast_service__["a" /* ToastService */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__toast_service__["a" /* ToastService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__toast_service__["a" /* ToastService */]) === "function" && _a || Object])
 ], SocketService);
 
+var _a;
 //# sourceMappingURL=socket.service.js.map
 
 /***/ })
