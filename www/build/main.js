@@ -92,18 +92,15 @@ var ToastService = (function () {
     function ToastService(toastCtrl) {
         this.toastCtrl = toastCtrl;
     }
-    ToastService.prototype.create = function (message, ok, duration) {
-        if (ok === void 0) { ok = false; }
-        if (duration === void 0) { duration = 2000; }
+    ToastService.prototype.create = function (message, position) {
+        if (position === void 0) { position = 'bottom'; }
         if (this.toast) {
             this.toast.dismiss();
         }
         this.toast = this.toastCtrl.create({
             message: message,
-            duration: ok ? null : duration,
-            position: 'top',
-            showCloseButton: ok,
-            closeButtonText: 'OK'
+            position: position,
+            duration: 2000
         });
         this.toast.present();
     };
@@ -111,10 +108,9 @@ var ToastService = (function () {
 }());
 ToastService = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */]])
 ], ToastService);
 
-var _a;
 //# sourceMappingURL=toast.service.js.map
 
 /***/ }),

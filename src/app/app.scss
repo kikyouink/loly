@@ -1,3 +1,4 @@
+@import '../theme/dark.theme';
 *{
     font-family: 'Microsoft YaHei';
     //隐藏滚动条
@@ -30,7 +31,16 @@
 ion-header {
     padding-top: $cordova-md-statusbar-padding;
     background:color($colors,bili);
+    //background: $ss;
 }
+ion-avatar{
+    border: solid 2px rgb(240, 225, 225);
+    border-radius: 100%;
+}
+h2{
+    color: gray
+}
+
 @import '../theme/dark.theme';
 
 

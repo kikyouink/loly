@@ -7,17 +7,15 @@ export class ToastService {
   toast: Toast;
   constructor(public toastCtrl: ToastController) { }
 
-  create(message, ok = false, duration = 2000) {
+  create(message, position = 'bottom') {
     if (this.toast) {
       this.toast.dismiss();
     }
 
     this.toast = this.toastCtrl.create({
       message,
-      duration: ok ? null : duration,
-      position: 'top',
-      showCloseButton: ok,
-      closeButtonText: 'OK'
+      position: position,
+      duration: 2000
     });
     this.toast.present();
   }
