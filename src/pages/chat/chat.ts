@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component,ViewChild} from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {App } from 'ionic-angular'; 
 import {SocketService} from '../../provider/socket.service';
@@ -17,6 +17,7 @@ import {SocketService} from '../../provider/socket.service';
 export class ChatPage {
   to:string=this.navParams.get('to');
   from:string=this.navParams.get('from');
+  @ViewChild('input') input: HTMLInputElement;
   constructor(public navCtrl: NavController, public navParams: NavParams, public app :App,public ss:SocketService) {
   }
   ionViewDidLoad() {
@@ -24,6 +25,7 @@ export class ChatPage {
   }
   send(msg){
     this.ss.send(msg,this.to);
+    this.input.value='';
   }
   sendAll(msg){
     this.ss.sendAll(msg);
