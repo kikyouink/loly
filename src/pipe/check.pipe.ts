@@ -4,7 +4,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 export class CheckPipe implements PipeTransform {
   transform(username: string): boolean {
-    var x = /^[a-zA-Z0-9_-]{4,10}$/;
+    var x = /^[a-zA-Z0-9_-]{6,10}$/;
     return x.test(username);
   }
 }

@@ -98,7 +98,7 @@ var CheckPipe = (function () {
     function CheckPipe() {
     }
     CheckPipe.prototype.transform = function (username) {
-        var x = /^[a-zA-Z0-9_-]{4,10}$/;
+        var x = /^[a-zA-Z0-9_-]{6,10}$/;
         return x.test(username);
     };
     return CheckPipe;
