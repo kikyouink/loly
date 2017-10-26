@@ -4,7 +4,7 @@ declare const io;
 @Injectable()
 export class SocketService {
     //url:string='10.11.163.178:3000';
-    url:string='http://111.231.216.168:3000';
+    url:string='http://111.231.216.168:3000/';
     socket:any=io(this.url,{secure: true});
     sign_result:boolean;
     login_result:boolean;
