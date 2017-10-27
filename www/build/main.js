@@ -376,25 +376,22 @@ var MyApp = (function () {
     };
     MyApp.prototype.setTheme = function () {
         var theme = this.sto.get('theme');
-        this.global.set('theme', theme);
+        if (theme != null)
+            this.global.set('theme', theme);
     };
     return MyApp;
 }());
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* ViewChild */])('content'),
-    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */])
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object)
 ], MyApp.prototype, "nav", void 0);
 MyApp = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"D:\12\myapp\src\app\app.html"*/'<div [class]="global.theme[\'theme\']">\n<ion-menu [content]="content">\n  <ion-content>\n    <div id=\'headDiv\'>\n      <img src="assets/img/avatar/girl-avatar.png" class="head">\n    </div>\n    <ion-list no-lines>\n      <ion-list-header>\n        菜单\n      </ion-list-header>\n      <button ion-item menuClose class="slideMenu" (click)="moveTo(item.page)" *ngFor="let item of items">\n        <ion-icon [name]="item.icon" item-start></ion-icon>{{item.name}}\n      </button>\n    </ion-list>\n  </ion-content>\n  <ion-footer>\n    <ion-toolbar >\n      <button ion-button clear menuClose color=\'gray\' style="width:45%" ><ion-icon name="settings"></ion-icon>设置</button>\n      <button ion-button clear menuClose color=\'gray\' style="width:45%" (click)="moveTo(\'ThemePage\')"><ion-icon name="color-palette"></ion-icon>主题</button>\n    </ion-toolbar>\n  </ion-footer>\n</ion-menu>\n\n<ion-nav [root]="rootPage" #content></ion-nav>\n</div>'/*ion-inline-end:"D:\12\myapp\src\app\app.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */],
-        __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */],
-        __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
-        __WEBPACK_IMPORTED_MODULE_5__provider_theme_service__["a" /* ThemeService */],
-        __WEBPACK_IMPORTED_MODULE_4__provider_socket_service__["a" /* SocketService */],
-        __WEBPACK_IMPORTED_MODULE_6__provider_storage_service__["a" /* StorageService */]])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_5__provider_theme_service__["a" /* ThemeService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__provider_theme_service__["a" /* ThemeService */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_4__provider_socket_service__["a" /* SocketService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__provider_socket_service__["a" /* SocketService */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_6__provider_storage_service__["a" /* StorageService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__provider_storage_service__["a" /* StorageService */]) === "function" && _g || Object])
 ], MyApp);
 
+var _a, _b, _c, _d, _e, _f, _g;
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),

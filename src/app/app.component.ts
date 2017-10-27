@@ -62,6 +62,7 @@ export class MyApp {
   }
   setTheme() {
     var theme = this.sto.get('theme');
+    if(theme!=null)
     this.global.set('theme', theme);
   }
 }
