@@ -26,7 +26,7 @@ var StorageService = (function () {
         }
         console.log('未定义');
         var arg = ['theme'];
-        var value = ['theme-deeppink'];
+        var value = ['theme-indianred'];
         for (var i = 0; i < arg.length; i++) {
             this.save(arg[0], value[0]);
         }
@@ -67,10 +67,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var ThemeService = (function () {
     function ThemeService() {
-        this.theme = {};
+        this.theme = {
+            theme: 'theme-indianred'
+        };
     }
     ThemeService.prototype.set = function (prop, value) {
-        console.log(this.theme);
         // internally mutate our state
         return this.theme[prop] = value;
     };

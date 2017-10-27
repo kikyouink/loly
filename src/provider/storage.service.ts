@@ -9,7 +9,7 @@ export class StorageService {
         }
         console.log('未定义');
         var arg=['theme'];
-        var value=['theme-deeppink'];
+        var value=['theme-indianred'];
         for(var i=0;i<arg.length;i++){
             this.save(arg[0],value[0]);
         }
