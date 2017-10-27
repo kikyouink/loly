@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ToastService } from  './toast.service';
+import { InformService } from  './inform.service';
 declare const io;
 @Injectable()
 export class SocketService {
@@ -12,7 +12,7 @@ export class SocketService {
     nickname:string;
     n:number=0;
     //inited:boolean=false;
-    constructor(public toastCtrl: ToastService){
+    constructor(public is: InformService){
 
     }
     sign(info){
@@ -37,30 +37,30 @@ export class SocketService {
         this.socket.on('signSuccess', () => {
             this.sign_result=true;
             console.log(this.n++);
-            this.toastCtrl.create('注册成功');
+            this.is.createT('注册成功');
         });
         this.socket.on('isExits', () => {
             this.sign_result=false;
-            this.toastCtrl.create('此用户已存在');
+            this.is.createT('此用户已存在');
             console.log(this.n++);
         })
         this.socket.on('loginSuccess', () => {
             this.login_result=true;
-            this.toastCtrl.create('登录成功');
+            this.is.createT('登录成功');
             console.log(this.n++);
         });
         this.socket.on('loginFailed', () => {
             this.login_result=false;
-            this.toastCtrl.create('登录失败');
+            this.is.createT('登录失败');
             console.log(this.n++);
         });
         this.socket.on('privateMsg',(msg)=>{
-            this.toastCtrl.create('私人信息:'+msg);
+            this.is.createT('私人信息:'+msg);
             console.log(msg);
             console.log(this.n++);
         })
         this.socket.on('publicMsg',(msg)=>{
-            this.toastCtrl.create('公共信息:'+msg);
+            this.is.createT('公共信息:'+msg);
             console.log(msg);
             console.log(this.n++);
         })

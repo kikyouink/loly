@@ -53,7 +53,7 @@ export class MainPage {
     ];
     this.items2=[
       {
-        groupname:'2578443177',
+        groupname:'群聊',
         src:'assets/img/avatar/flower.png',
         nickname:'Job',
         lastWords:'Manager：send the report to me',

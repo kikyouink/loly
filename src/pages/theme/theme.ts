@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { StorageService } from '../../provider/storage.service';
 import { ThemeService } from '../../provider/theme.service';
+import { InformService } from '../../provider/inform.service';
 /**
  * Generated class for the ThemePage page.
  *
@@ -16,7 +17,12 @@ import { ThemeService } from '../../provider/theme.service';
 })
 export class ThemePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public sto: StorageService,public global:ThemeService) {
+  constructor(public navCtrl: NavController, 
+    public navParams: NavParams,
+    public sto: StorageService,
+    public global:ThemeService,
+    public is:InformService,
+  ) {
   }
   list:object[];
   ionViewDidLoad() {
@@ -47,9 +53,12 @@ export class ThemePage {
   changeTheme(color){
       var theme='theme-'+color;
       console.log('传入的主题是:'+theme);
+      this.is.createL('设置中...',2000,()=>{
+        this.navCtrl.pop();
+      });
       this.global.set('theme', theme);
       this.sto.save('theme',theme);
-      this.navCtrl.pop();
+
   }
 
 }

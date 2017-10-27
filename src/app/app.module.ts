@@ -7,7 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { NavController} from 'ionic-angular';
 import {SocketService} from '../provider/socket.service';
-import {ToastService} from '../provider/toast.service';
+import {InformService} from '../provider/inform.service';
 import { ThemeService } from '../provider/theme.service';
 import { StorageService } from '../provider/storage.service';
 @NgModule({
@@ -27,7 +27,7 @@ import { StorageService } from '../provider/storage.service';
     StatusBar,
     SplashScreen,
     SocketService,
-    ToastService,
+    InformService,
     ThemeService,
     StorageService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
