@@ -1,4 +1,3 @@
-@import '../theme/dark.theme';
 *{
     font-family: 'Microsoft YaHei';
     //隐藏滚动条
@@ -20,27 +19,23 @@
 #headDiv{
     text-align: center;
     height:30%;
-    background:#f97398;
     position: relative;
 
 }
-.mm{
-    color:gray
+h2{
+    color: gray
 }
-
-ion-header {
+ion-header{
     padding-top: $cordova-md-statusbar-padding;
-    background:color($colors,bili);
-    //background: $ss;
+}
+ion-list{
+    .slideMenu{
+        color:gray
+    }
 }
 ion-avatar{
     border: solid 2px rgb(240, 225, 225);
     border-radius: 100%;
 }
-h2{
-    color: gray
-}
-
-@import '../theme/dark.theme';
-
+@import '../theme/theme';
 

@@ -1,6 +1,90 @@
-webpackJsonp([8],{
+webpackJsonp([9],{
 
-/***/ 109:
+/***/ 101:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StorageService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var StorageService = (function () {
+    function StorageService() {
+    }
+    StorageService.prototype.init = function () {
+        if (this.get('inited') == 'true') {
+            console.log('已定义');
+            return;
+        }
+        console.log('未定义');
+        var arg = ['theme'];
+        var value = ['theme-deeppink'];
+        for (var i = 0; i < arg.length; i++) {
+            this.save(arg[0], value[0]);
+        }
+        this.save('inited', true);
+    };
+    StorageService.prototype.save = function (key, value) {
+        localStorage.setItem(key, value);
+    };
+    StorageService.prototype.get = function (key) {
+        return localStorage.getItem(key);
+    };
+    StorageService.prototype.delete = function (key) {
+        localStorage.removeItem(key);
+    };
+    return StorageService;
+}());
+StorageService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+    __metadata("design:paramtypes", [])
+], StorageService);
+
+//# sourceMappingURL=storage.service.js.map
+
+/***/ }),
+
+/***/ 102:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ThemeService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var ThemeService = (function () {
+    function ThemeService() {
+        this.theme = {};
+    }
+    ThemeService.prototype.set = function (prop, value) {
+        console.log(this.theme);
+        // internally mutate our state
+        return this.theme[prop] = value;
+    };
+    return ThemeService;
+}());
+ThemeService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])()
+], ThemeService);
+
+//# sourceMappingURL=theme.service.js.map
+
+/***/ }),
+
+/***/ 111:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -13,21 +97,21 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 109;
+webpackEmptyAsyncContext.id = 111;
 
 /***/ }),
 
-/***/ 150:
+/***/ 152:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/chat/chat.module": [
 		265,
-		7
+		8
 	],
 	"../pages/contact/contact.module": [
 		266,
-		6
+		7
 	],
 	"../pages/login/login.module": [
 		267,
@@ -35,15 +119,15 @@ var map = {
 	],
 	"../pages/main/main.module": [
 		268,
-		5
+		6
 	],
 	"../pages/news/news.module": [
 		269,
-		4
+		5
 	],
 	"../pages/person/person.module": [
 		270,
-		3
+		4
 	],
 	"../pages/sign/sign.module": [
 		271,
@@ -51,6 +135,10 @@ var map = {
 	],
 	"../pages/tabs/tabs.module": [
 		272,
+		3
+	],
+	"../pages/theme/theme.module": [
+		273,
 		2
 	]
 };
@@ -65,12 +153,12 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 150;
+webpackAsyncContext.id = 152;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 151:
+/***/ 153:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -115,89 +203,6 @@ ToastService = __decorate([
 
 /***/ }),
 
-/***/ 194:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ThemeService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-var ThemeService = (function () {
-    function ThemeService() {
-        this.theme = {};
-    }
-    ThemeService.prototype.set = function (prop, value) {
-        console.log(this.theme);
-        // internally mutate our state
-        return this.theme[prop] = value;
-    };
-    return ThemeService;
-}());
-ThemeService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])()
-], ThemeService);
-
-//# sourceMappingURL=theme.service.js.map
-
-/***/ }),
-
-/***/ 195:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StorageService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var StorageService = (function () {
-    function StorageService() {
-    }
-    StorageService.prototype.init = function () {
-        if (this.get('inited') == 'true') {
-            console.log('已定义');
-            return;
-        }
-        console.log('未定义');
-        var arg = ['theme'];
-        for (var i = 0; i < arg.length; i++) {
-            this.save(arg[0], '');
-        }
-        this.save('inited', true);
-    };
-    StorageService.prototype.save = function (key, value) {
-        localStorage.setItem(key, value);
-    };
-    StorageService.prototype.get = function (key) {
-        return localStorage.getItem(key);
-    };
-    StorageService.prototype.delete = function (key) {
-        localStorage.removeItem(key);
-    };
-    return StorageService;
-}());
-StorageService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
-    __metadata("design:paramtypes", [])
-], StorageService);
-
-//# sourceMappingURL=storage.service.js.map
-
-/***/ }),
-
 /***/ 196:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -223,11 +228,11 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(264);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_splash_screen__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_splash_screen__ = __webpack_require__(195);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__provider_socket_service__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__provider_toast_service__ = __webpack_require__(151);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__provider_theme_service__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__provider_storage_service__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__provider_toast_service__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__provider_theme_service__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__provider_storage_service__ = __webpack_require__(101);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -267,7 +272,8 @@ AppModule = __decorate([
                     { loadChildren: '../pages/news/news.module#NewsPageModule', name: 'NewsPage', segment: 'news', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/person/person.module#PersonPageModule', name: 'PersonPage', segment: 'person', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/sign/sign.module#SignPageModule', name: 'SignPage', segment: 'sign', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] }
+                    { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/theme/theme.module#ThemePageModule', name: 'ThemePage', segment: 'theme', priority: 'low', defaultHistory: [] }
                 ]
             })
         ],
@@ -299,10 +305,10 @@ AppModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(195);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__provider_socket_service__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__provider_theme_service__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__provider_storage_service__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__provider_theme_service__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__provider_storage_service__ = __webpack_require__(101);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -326,22 +332,15 @@ var MyApp = (function () {
         this.ss = ss;
         this.sto = sto;
         this.rootPage = 'TabsPage';
-        this.theme = {
-            name: this.sto.get('theme') == '' ? '日间' : '夜间',
-            icon: this.sto.get('theme') == '' ? 'leaf' : 'moon',
-        };
         platform.ready().then(function () {
-            // Okay, so the platform is ready and our plugins are available.
-            // Here you can do any higher level native things you might need.
             console.log('设备就绪');
             statusBar.backgroundColorByHexString('#00ffffff');
             splashScreen.hide();
             //读取存储
             var sto = _this.sto;
-            sto.init();
-            _this.setTheme();
-            //socket.io就位
-            ss.onInit();
+            sto.init(); //初始化
+            _this.setTheme(); //设置主题
+            ss.onInit(); //socket.io就位
             _this.items = [
                 {
                     icon: 'leaf',
@@ -378,33 +377,19 @@ var MyApp = (function () {
         var theme = this.sto.get('theme');
         this.global.set('theme', theme);
     };
-    MyApp.prototype.changeTheme = function () {
-        var theme = this.sto.get('theme');
-        var value;
-        if (theme == '')
-            value = 'theme-dark';
-        else
-            value = '';
-        this.global.set('theme', value);
-        this.sto.save('theme', value);
-    };
     return MyApp;
 }());
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* ViewChild */])('content'),
-    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */])
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object)
 ], MyApp.prototype, "nav", void 0);
 MyApp = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"D:\12\myapp\src\app\app.html"*/'<div [class]="global.theme[\'theme\']">\n<ion-menu [content]="content">\n  <ion-content>\n    <div id=\'headDiv\'>\n      <img src="assets/img/avatar/girl-avatar.png" class="head">\n    </div>\n    <ion-list no-lines>\n      <ion-list-header>\n        菜单\n      </ion-list-header>\n      <button ion-item menuClose class="mm" (click)="moveTo(item.page)" *ngFor="let item of items">\n        <ion-icon [name]="item.icon" item-start></ion-icon>{{item.name}}\n      </button>\n    </ion-list>\n  </ion-content>\n  <ion-footer>\n    <ion-toolbar >\n      <button ion-button clear menuClose color=\'gray\' style="width:45%" ><ion-icon name="settings"></ion-icon>设置</button>\n      <button ion-button clear menuClose color=\'gray\' style="width:45%" (click)="changeTheme()"><ion-icon [name]="theme.icon"></ion-icon>{{theme.name}}</button>\n    </ion-toolbar>\n  </ion-footer>\n</ion-menu>\n\n<ion-nav [root]="rootPage" #content></ion-nav>\n</div>'/*ion-inline-end:"D:\12\myapp\src\app\app.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"D:\12\myapp\src\app\app.html"*/'<div [class]="global.theme[\'theme\']">\n<ion-menu [content]="content">\n  <ion-content>\n    <div id=\'headDiv\'>\n      <img src="assets/img/avatar/girl-avatar.png" class="head">\n    </div>\n    <ion-list no-lines>\n      <ion-list-header>\n        菜单\n      </ion-list-header>\n      <button ion-item menuClose class="slideMenu" (click)="moveTo(item.page)" *ngFor="let item of items">\n        <ion-icon [name]="item.icon" item-start></ion-icon>{{item.name}}\n      </button>\n    </ion-list>\n  </ion-content>\n  <ion-footer>\n    <ion-toolbar >\n      <button ion-button clear menuClose color=\'gray\' style="width:45%" ><ion-icon name="settings"></ion-icon>设置</button>\n      <button ion-button clear menuClose color=\'gray\' style="width:45%" (click)="moveTo(\'ThemePage\')"><ion-icon name="color-palette"></ion-icon>主题</button>\n    </ion-toolbar>\n  </ion-footer>\n</ion-menu>\n\n<ion-nav [root]="rootPage" #content></ion-nav>\n</div>'/*ion-inline-end:"D:\12\myapp\src\app\app.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */],
-        __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */],
-        __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
-        __WEBPACK_IMPORTED_MODULE_5__provider_theme_service__["a" /* ThemeService */],
-        __WEBPACK_IMPORTED_MODULE_4__provider_socket_service__["a" /* SocketService */],
-        __WEBPACK_IMPORTED_MODULE_6__provider_storage_service__["a" /* StorageService */]])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_5__provider_theme_service__["a" /* ThemeService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__provider_theme_service__["a" /* ThemeService */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_4__provider_socket_service__["a" /* SocketService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__provider_socket_service__["a" /* SocketService */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_6__provider_storage_service__["a" /* StorageService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__provider_storage_service__["a" /* StorageService */]) === "function" && _g || Object])
 ], MyApp);
 
+var _a, _b, _c, _d, _e, _f, _g;
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),
@@ -415,7 +400,7 @@ MyApp = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SocketService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__toast_service__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__toast_service__ = __webpack_require__(153);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);

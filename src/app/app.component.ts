@@ -12,10 +12,6 @@ export class MyApp {
   rootPage: any = 'TabsPage';
   @ViewChild('content') nav: NavController;
   items: object[];
-  theme: object = {
-    name: this.sto.get('theme') == '' ? '日间' : '夜间',
-    icon: this.sto.get('theme') == '' ? 'leaf' : 'moon',
-  }
   constructor(platform: Platform,
     statusBar: StatusBar,
     splashScreen: SplashScreen,
@@ -24,17 +20,14 @@ export class MyApp {
     public sto: StorageService,
   ) {
     platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
       console.log('设备就绪');
       statusBar.backgroundColorByHexString('#00ffffff');
       splashScreen.hide();
       //读取存储
       var sto = this.sto;
-      sto.init();
-      this.setTheme();
-      //socket.io就位
-      ss.onInit();
+      sto.init();              //初始化
+      this.setTheme();         //设置主题
+      ss.onInit();             //socket.io就位
       this.items = [
         {
           icon: 'leaf',
@@ -70,13 +63,5 @@ export class MyApp {
   setTheme() {
     var theme = this.sto.get('theme');
     this.global.set('theme', theme);
-  }
-  changeTheme() {
-    var theme = this.sto.get('theme');
-    var value;
-    if(theme=='') value='theme-dark';
-    else value='';
-    this.global.set('theme', value);
-    this.sto.save('theme',value);
   }
 }

@@ -1,0 +1,233 @@
+.theme-black {
+    //同时改变bgcolor和cololr，一般是容器
+    ion-header,ion-content,ion-footer,ion-item,ion-label {
+      background-color: #222A37 ;
+      color: #9EAEC8 ;
+    }
+    .input-wrapper,.item{
+      background-color: #222A37 ;
+      color: #9EAEC8 ;
+    }
+
+    //所有bg改变
+
+    .tabbar{
+      background: #222A37 ;
+    }
+    .toolbar-background{
+      background-color: #222A37 ;
+    }
+    #headDiv{
+      background: #222A37 ;
+    }
+    
+    //所有color改变
+
+    h1,h2,h3,h4,h5,h6,p,body,div {
+      color: #9EAEC8;
+    }
+    ion-list-header{
+      border:none;
+    }
+    span.button-inner{
+      color: #9EAEC8 
+    }
+    .toolbar-title{
+      color: #9EAEC8;
+    }
+    .tab-button[aria-selected=true] .tab-button-icon{
+      color: #9EAEC8 ;
+    }
+    .tab-button[aria-selected=true] {
+        color: #9EAEC8 ;
+    }
+    .tab-button-icon{
+        color: #5b5e7f ;
+    }
+    .tab-button{
+      color: gray ;
+    }
+     
+    //所有bg-color改变
+
+    ion-list {
+      background-color: #222A37;
+    }
+    .button-round{
+      background-color: #2f4467 ;
+    }
+    .fab{
+      background-color: #2f4467 ;
+    }
+
+  }
+  //蓝色主题
+  .theme-blue {
+    ion-header{
+        background:color($colors,primary) ;
+        .toolbar-background{
+            background:color($colors,primary) ;
+        }
+        .toolbar-title,.back-button-icon{
+            color: white
+        }
+    }
+    #headDiv{
+        background:#2f5aa6 ;  
+    }
+    ion-fab{
+      .fab{
+        background-color: color($colors,primary) ;
+    }
+    }
+    //color
+    ion-tabs{
+      .tab-button[aria-selected=true] .tab-button-icon{
+          color: color($colors,primary) ;
+      }
+      .tab-button[aria-selected=true] {
+          color: color($colors,primary) ;
+      }
+      .tab-button{
+          color: gray ;
+      }
+    }
+}
+.theme-purple {
+  ion-header{
+      background:purple ;
+      .toolbar-background{
+          background:purple ;
+      }
+      .toolbar-title,.back-button-icon{
+          color: white
+      }
+  }
+  #headDiv{
+      background:#530053 ;  
+  }
+  ion-fab{
+    .fab{
+      background-color: purple ;
+    }
+  }
+  ion-tabs{
+    .tab-button[aria-selected=true] .tab-button-icon{
+        color: purple ;
+    }
+    .tab-button[aria-selected=true] {
+        color: purple ;
+    }
+    .tab-button{
+        color: gray ;
+    }
+    .button-round.button-full{
+      background:purple ;  
+    }
+  }
+}
+.theme-white {
+  ion-header{
+      background:white ;
+      .toolbar-background{
+          background:white ;
+      }
+      .toolbar-title,.back-button-icon{
+          color: gray
+      }
+  }
+  #headDiv{
+      background:white ;  
+  }
+  ion-tabs{
+    .tab-button[aria-selected=true] .tab-button-icon{
+        color: #499cf5 ;
+    }
+    .tab-button[aria-selected=true] {
+        color: gray ;
+    }
+    .tab-button{
+        color: gray ;
+    }
+    .button-round.button-full{
+      background:#499cf5 ;  
+    }
+  }
+  ion-fab{
+    .fab{
+      background-color: white ;
+    }
+  }
+  ion-icon{
+    color:#499cf5;
+  }
+}
+.theme-green {
+  ion-header{
+      background:#95a5a6 ;
+      .toolbar-background{
+          background:#95a5a6 ;
+      }
+      .toolbar-title,.back-button-icon{
+          color: white
+      }
+  }
+  #headDiv{
+      background:#95a5a6 ;  
+  }
+  ion-tabs{
+    .tab-button[aria-selected=true] .tab-button-icon{
+        color: #95a5a6 ;
+    }
+    .tab-button[aria-selected=true] {
+        color: gray ;
+    }
+    .tab-button{
+        color: gray ;
+    }
+    .button-round.button-full{
+      background:#95a5a6 ;  
+    }
+  }
+  ion-fab{
+    .fab{
+      background-color: #95a5a6 ;
+    }
+  }
+}
+.theme-deeppink{
+  #headDiv{
+    background:#f97398;
+}
+  ion-header{
+    background:color($colors,bili);
+    .toolbar-background{
+        background:color($colors,bili);
+    }
+    .toolbar-title,.back-button-icon{
+        color: white
+    }
+}
+  ion-tabs{
+    .tab-button[aria-selected=true] .tab-button-icon{
+        color: color($colors,bili) ;
+    }
+    .tab-button[aria-selected=true] {
+        color: color($colors,bili) ;
+    }
+    .tab-button{
+        color: gray ;
+    }
+    .button-round.button-full{
+      background:color($colors,bili) ; 
+    }
+}
+ion-fab{
+    .fab{
+        background-color: color($colors,bili) ;
+    }
+}
+}
+
+  
+  

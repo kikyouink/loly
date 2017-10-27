@@ -8,7 +8,7 @@
       <ion-list-header>
         菜单
       </ion-list-header>
-      <button ion-item menuClose class="mm" (click)="moveTo(item.page)" *ngFor="let item of items">
+      <button ion-item menuClose class="slideMenu" (click)="moveTo(item.page)" *ngFor="let item of items">
         <ion-icon [name]="item.icon" item-start></ion-icon>{{item.name}}
       </button>
     </ion-list>
@@ -16,7 +16,7 @@
   <ion-footer>
     <ion-toolbar >
       <button ion-button clear menuClose color='gray' style="width:45%" ><ion-icon name="settings"></ion-icon>设置</button>
-      <button ion-button clear menuClose color='gray' style="width:45%" (click)="changeTheme()"><ion-icon [name]="theme.icon"></ion-icon>{{theme.name}}</button>
+      <button ion-button clear menuClose color='gray' style="width:45%" (click)="moveTo('ThemePage')"><ion-icon name="color-palette"></ion-icon>主题</button>
     </ion-toolbar>
   </ion-footer>
 </ion-menu>
