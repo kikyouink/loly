@@ -16,7 +16,7 @@
 <ion-content padding>
   <ion-row >
     <ion-col col-4  style='text-align:center' *ngFor="let button of list">
-      <button ion-button round (click)="changeTheme(button.color)" [style.background-color]='button.color' [style.color]='button.textColor'>{{button.name}}</button>
+      <button ion-button round class='themeBtn' (click)="changeTheme(button.color)" [style.background-color]='button.color' [style.color]='button.textColor'>{{button.name}}</button>
     </ion-col>
   </ion-row>
 </ion-content>

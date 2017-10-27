@@ -30441,6 +30441,10 @@ ion-avatar {
   color: #9EAEC8;
 }
 
+.theme-black .themeBtn span.button-inner {
+  color: whitesmoke;
+}
+
 .theme-black .toolbar-title {
   color: #9EAEC8;
 }
