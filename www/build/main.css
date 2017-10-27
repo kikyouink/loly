@@ -30585,74 +30585,74 @@ ion-avatar {
   color: #499cf5;
 }
 
-.theme-green ion-header {
+.theme-darkgray ion-header {
   background: #95a5a6;
 }
 
-.theme-green ion-header .toolbar-background {
+.theme-darkgray ion-header .toolbar-background {
   background: #95a5a6;
 }
 
-.theme-green ion-header .toolbar-title, .theme-green ion-header .back-button-icon {
+.theme-darkgray ion-header .toolbar-title, .theme-darkgray ion-header .back-button-icon {
   color: white;
 }
 
-.theme-green #headDiv {
+.theme-darkgray #headDiv {
   background: #95a5a6;
 }
 
-.theme-green ion-tabs .tab-button[aria-selected=true] .tab-button-icon {
+.theme-darkgray ion-tabs .tab-button[aria-selected=true] .tab-button-icon {
   color: #95a5a6;
 }
 
-.theme-green ion-tabs .tab-button[aria-selected=true] {
+.theme-darkgray ion-tabs .tab-button[aria-selected=true] {
   color: gray;
 }
 
-.theme-green ion-tabs .tab-button {
+.theme-darkgray ion-tabs .tab-button {
   color: gray;
 }
 
-.theme-green ion-tabs .button-round.button-full {
+.theme-darkgray ion-tabs .button-round.button-full {
   background: #95a5a6;
 }
 
-.theme-green ion-fab .fab {
+.theme-darkgray ion-fab .fab {
   background-color: #95a5a6;
 }
 
-.theme-deeppink #headDiv {
+.theme-indianred #headDiv {
   background: #f97398;
 }
 
-.theme-deeppink ion-header {
+.theme-indianred ion-header {
   background: #f97398;
 }
 
-.theme-deeppink ion-header .toolbar-background {
+.theme-indianred ion-header .toolbar-background {
   background: #f97398;
 }
 
-.theme-deeppink ion-header .toolbar-title, .theme-deeppink ion-header .back-button-icon {
+.theme-indianred ion-header .toolbar-title, .theme-indianred ion-header .back-button-icon {
   color: white;
 }
 
-.theme-deeppink ion-tabs .tab-button[aria-selected=true] .tab-button-icon {
+.theme-indianred ion-tabs .tab-button[aria-selected=true] .tab-button-icon {
   color: #f97398;
 }
 
-.theme-deeppink ion-tabs .tab-button[aria-selected=true] {
+.theme-indianred ion-tabs .tab-button[aria-selected=true] {
   color: #f97398;
 }
 
-.theme-deeppink ion-tabs .tab-button {
+.theme-indianred ion-tabs .tab-button {
   color: gray;
 }
 
-.theme-deeppink ion-tabs .button-round.button-full {
+.theme-indianred ion-tabs .button-round.button-full {
   background: #f97398;
 }
 
-.theme-deeppink ion-fab .fab {
+.theme-indianred ion-fab .fab {
   background-color: #f97398;
 }

@@ -40,7 +40,7 @@ export class ThemePage {
         color:'black',
       }, {
         name:'少女',
-        color:'deeppink',
+        color:'indianred',
       },
     ]
   }
