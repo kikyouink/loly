@@ -30445,23 +30445,23 @@ ion-avatar {
   color: whitesmoke;
 }
 
-.theme-black .toolbar-title {
+.theme-black ion-tabs .toolbar-title {
   color: #9EAEC8;
 }
 
-.theme-black .tab-button[aria-selected=true] .tab-button-icon {
+.theme-black ion-tabs .tab-button[aria-selected=true] .tab-button-icon {
   color: #9EAEC8;
 }
 
-.theme-black .tab-button[aria-selected=true] {
+.theme-black ion-tabs .tab-button[aria-selected=true] {
   color: #9EAEC8;
 }
 
-.theme-black .tab-button-icon {
+.theme-black ion-tabs .tab-button-icon {
   color: #5b5e7f;
 }
 
-.theme-black .tab-button {
+.theme-black ion-tabs .tab-button {
   color: gray;
 }
 
@@ -30473,7 +30473,7 @@ ion-avatar {
   background-color: #2f4467;
 }
 
-.theme-black .fab {
+.theme-black ion-fab .fab {
   background-color: #2f4467;
 }
 

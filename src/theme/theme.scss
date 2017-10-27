@@ -1,3 +1,4 @@
+//夜间主题
 .theme-black {
     //同时改变bgcolor和cololr，一般是容器
     ion-header,ion-content,ion-footer,ion-item,ion-label {
@@ -37,20 +38,22 @@
         color: whitesmoke 
       }
     }
-    .toolbar-title{
-      color: #9EAEC8;
-    }
-    .tab-button[aria-selected=true] .tab-button-icon{
-      color: #9EAEC8 ;
-    }
-    .tab-button[aria-selected=true] {
-        color: #9EAEC8 ;
-    }
-    .tab-button-icon{
-        color: #5b5e7f ;
-    }
-    .tab-button{
-      color: gray ;
+    ion-tabs{
+        .toolbar-title{
+            color: #9EAEC8;
+        }
+        .tab-button[aria-selected=true] .tab-button-icon{
+            color: #9EAEC8 ;
+        }
+        .tab-button[aria-selected=true] {
+            color: #9EAEC8 ;
+        }
+        .tab-button-icon{
+            color: #5b5e7f ;
+        }
+        .tab-button{
+        color: gray ;
+        }
     }
      
     //所有bg-color改变
@@ -61,12 +64,14 @@
     .button-round{
       background-color: #2f4467 ;
     }
-    .fab{
-      background-color: #2f4467 ;
+    ion-fab{
+        .fab{
+            background-color: #2f4467 ;
+        }
     }
 
   }
-  //蓝色主题
+  //新桥
   .theme-blue {
     ion-header{
         background:color($colors,primary) ;
@@ -98,6 +103,7 @@
       }
     }
 }
+//葡萄
 .theme-purple {
   ion-header{
       background:purple ;
@@ -131,6 +137,7 @@
     }
   }
 }
+//纯白
 .theme-white {
   ion-header{
       background:white ;
@@ -167,6 +174,7 @@
     color:#499cf5;
   }
 }
+//原谅
 .theme-darkgray {
   ion-header{
       background:#95a5a6 ;
@@ -200,6 +208,7 @@
     }
   }
 }
+//少女
 .theme-indianred{
   #headDiv{
     background:#f97398;
