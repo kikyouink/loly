@@ -1,1 +1,139 @@
-webpackJsonp([6],{232:function(n,l,u){"use strict";function t(n){return a._29(0,[(n()(),a._6(0,null,null,10,"ion-header",[["no-border",""]],null,null,null,null,null)),a._4(16384,null,0,w.a,[O.a,a.k,a.E,[2,y.a]],null,null),(n()(),a._27(null,["\n    "])),(n()(),a._6(0,null,null,6,"ion-toolbar",[["class","toolbar"]],[[2,"statusbar-padding",null]],null,null,m.b,m.a)),a._4(49152,null,0,P.a,[O.a,a.k,a.E],null,null),(n()(),a._27(3,["\n        "])),(n()(),a._6(0,null,3,2,"ion-title",[],null,null,null,E.b,E.a)),a._4(49152,null,0,C.a,[O.a,a.k,a.E,[2,P.a],[2,N.a]],null,null),(n()(),a._27(0,["动态"])),(n()(),a._27(3,["  \n      "])),(n()(),a._27(null,["\n"])),(n()(),a._27(null,["\n\n\n"])),(n()(),a._6(0,null,null,6,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],[["window","resize"]],function(n,l,u){var t=!0;return"window:resize"===l&&(t=!1!==a._20(n,13).resize()&&t),t},z.b,z.a)),a._4(4374528,null,0,L.a,[O.a,R.a,D.a,a.k,a.E,M.a,V.a,a.x,[2,y.a],[2,x.a]],null,null),(n()(),a._27(1,["\n  "])),(n()(),a._6(0,null,1,2,"button",[["full",""],["ion-button",""],["round",""]],null,[[null,"click"]],function(n,l,u){var t=!0,a=n.component;return"click"===l&&(t=!1!==a.loginOut()&&t),t},F.b,F.a)),a._4(1097728,null,0,J.a,[[8,""],O.a,a.k,a.E],{round:[0,"round"],full:[1,"full"]},null),(n()(),a._27(0,["登出"])),(n()(),a._27(1,["\n"])),(n()(),a._27(null,["\n"]))],function(n,l){n(l,16,0,"","")},function(n,l){n(l,3,0,a._20(l,4)._sbPadding),n(l,12,0,a._20(l,13).statusbarPadding,a._20(l,13)._hasRefresher)})}Object.defineProperty(l,"__esModule",{value:!0});var a=u(0),e=u(5),o=u(53),i=function(){function n(n,l,u){this.navCtrl=n,this.navParams=l,this.app=u}return n.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad NewsPage")},n.prototype.loginOut=function(){this.app.getRootNav().setRoot("LoginPage")},n}();i=Object(e.__decorate)([Object(a.i)({selector:"page-news",templateUrl:"news.html"}),Object(e.__metadata)("design:paramtypes",["function"==typeof(r=void 0!==o.h&&o.h)&&r||Object,"function"==typeof(_=void 0!==o.i&&o.i)&&_||Object,"function"==typeof(s=void 0!==o.a&&o.a)&&s||Object])],i);var r,_,s,c=function(){return function(){}}();c=Object(e.__decorate)([Object(a.u)({declarations:[i],imports:[o.e.forChild(i)]})],c);var d=u(187),f=u(188),b=u(189),p=u(190),g=u(191),v=u(192),j=u(193),k=u(194),h=u(195),w=u(119),O=u(1),y=u(4),m=u(197),P=u(35),E=u(237),C=u(117),N=u(42),z=u(196),L=u(21),R=u(3),D=u(9),M=u(8),V=u(24),x=u(20),F=u(34),J=u(19),U=u(10),Y=[],q=a._3({encapsulation:2,styles:Y,data:{}}),A=a._1("page-news",i,function(n){return a._29(0,[(n()(),a._6(0,null,null,1,"page-news",[],null,null,null,t,q)),a._4(49152,null,0,i,[x.a,U.a,M.a],null,null)],null,null)},{},{},[]),B=u(13),G=u(16),H=u(118),I=u(37);u.d(l,"NewsPageModuleNgFactory",function(){return K});var K=a._2(c,[],function(n){return a._17([a._18(512,a.j,a.Y,[[8,[d.a,f.a,b.a,p.a,g.a,v.a,j.a,k.a,h.a,A]],[3,a.j],a.v]),a._18(4608,B.k,B.j,[a.t]),a._18(4608,G.k,G.k,[]),a._18(4608,G.c,G.c,[]),a._18(512,B.b,B.b,[]),a._18(512,G.j,G.j,[]),a._18(512,G.d,G.d,[]),a._18(512,G.i,G.i,[]),a._18(512,H.a,H.a,[]),a._18(512,H.b,H.b,[]),a._18(512,c,c,[]),a._18(256,I.a,i,[])])})},237:function(n,l,u){"use strict";function t(n){return a._29(2,[(n()(),a._6(0,null,null,2,"div",[["class","toolbar-title"]],null,null,null,null,null)),a._4(278528,null,0,e.g,[a.r,a.s,a.k,a.E],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),a._19(null,0)],function(n,l){n(l,1,0,"toolbar-title","toolbar-title-"+l.component._mode)},null)}u.d(l,"a",function(){return i}),l.b=t;var a=u(0),e=u(13),o=(u(117),u(1),u(35),u(42),[]),i=a._3({encapsulation:2,styles:o,data:{}})}});
+webpackJsonp([6],{
+
+/***/ 268:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainPageModule", function() { return MainPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__main__ = __webpack_require__(279);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var MainPageModule = (function () {
+    function MainPageModule() {
+    }
+    return MainPageModule;
+}());
+MainPageModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__main__["a" /* MainPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__main__["a" /* MainPage */]),
+        ],
+    })
+], MainPageModule);
+
+//# sourceMappingURL=main.module.js.map
+
+/***/ }),
+
+/***/ 279:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MainPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(101);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+/**
+ * Generated class for the MainPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var MainPage = (function () {
+    function MainPage(navCtrl, navParams, menuCtrl, app, statusBar) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.menuCtrl = menuCtrl;
+        this.app = app;
+        this.statusBar = statusBar;
+        this.username = '';
+    }
+    MainPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad MainPage');
+        console.log(this.navParams.get('username'));
+        this.username = this.navParams.get('username');
+        this.items = [
+            {
+                username: '2578443177',
+                src: 'assets/img/avatar/1.jpg',
+                nickname: 'William',
+                lastWords: 'Hello,nice to meet you。',
+            },
+            {
+                username: '123456',
+                src: 'assets/img/avatar/2.jpg',
+                nickname: 'Lera',
+                lastWords: 'see you later!',
+            },
+            {
+                username: '123456789',
+                src: 'assets/img/avatar/3.jpg',
+                nickname: 'Kristen',
+                lastWords: 'wait a monment...',
+            },
+        ];
+        this.items2 = [
+            {
+                groupname: '群聊',
+                src: 'assets/img/avatar/flower.png',
+                nickname: 'Job',
+                lastWords: 'Manager：send the report to me',
+            }
+        ];
+    };
+    MainPage.prototype.toggleMenu = function () {
+        this.menuCtrl.toggle();
+        console.log('打开菜单');
+    };
+    MainPage.prototype.chat = function (formname, toname) {
+        this.app.getRootNav().push('ChatPage', {
+            from: formname,
+            to: toname,
+        });
+    };
+    return MainPage;
+}());
+MainPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-main',template:/*ion-inline-start:"D:\12\myapp\src\pages\main\main.html"*/'<ion-header no-border>\n  <ion-navbar>\n    <ion-title>欢迎！{{username}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list-header>\n    我的好友\n  </ion-list-header>\n  <ion-list no-lines>\n    <button ion-item (click)="chat(username,item.username)" *ngFor="let item of items">\n      <ion-avatar item-start>\n        <img [src]="item.src">\n      </ion-avatar>\n      <h2>{{item.nickname}}</h2>\n      <p>{{item.lastWords}}</p>\n    </button>\n  </ion-list>\n\n  <ion-list>\n    <ion-list-header>\n      群聊\n    </ion-list-header>\n    <button ion-item (click)="chat(username,item.groupname)" *ngFor="let item of items2">\n      <ion-avatar item-start>\n        <img [src]="item.src">\n      </ion-avatar>\n      <h2>{{item.nickname}}</h2>\n      <p>{{item.lastWords}}</p>\n    </button>\n  </ion-list>\n  <ion-fab bottom left>\n    <button ion-fab margin-bottom id="menuBtn">\n      <ion-icon name="add" color="white" menuToggle></ion-icon>\n    </button>\n  </ion-fab>\n</ion-content>'/*ion-inline-end:"D:\12\myapp\src\pages\main\main.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* MenuController */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* App */],
+        __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]])
+], MainPage);
+
+//# sourceMappingURL=main.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=6.js.map

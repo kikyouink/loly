@@ -53,7 +53,7 @@ export class ThemePage {
   changeTheme(color){
       var theme='theme-'+color;
       console.log('传入的主题是:'+theme);
-      this.is.createL('设置中...',2000,()=>{
+      this.is.createL('设置中...',1000,()=>{
         this.navCtrl.pop();
       });
       this.global.set('theme', theme);

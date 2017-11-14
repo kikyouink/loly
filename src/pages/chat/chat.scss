@@ -1,3 +1,24 @@
 page-chat {
+    .headImg{
+        width:50px;
+        height: 50px;
+        border-radius: 100%;
+        border: 1px solid $light;
+    }
+    .msgDiv{
+        max-width: 70%;
+        background-color: $light;
+        color:gray;
+        border-radius: 5px;
+        padding: 15px;
+        margin-left: 10px;
 
+    }
+    .msgBox{
+        display: flex;
+        margin: 20px;
+    }
+    .msgBox.right{
+        flex-direction: row-reverse;
+    }
 }

@@ -1,1 +1,109 @@
-webpackJsonp([4],{233:function(l,n,u){"use strict";function a(l){return o._29(0,[(l()(),o._6(0,null,null,6,"ion-item",[["class","item item-block"]],null,null,null,y.b,y.a)),o._4(1097728,null,3,C.a,[E.a,j.a,o.k,o.E,[2,O.a]],null,null),o._25(335544320,1,{contentLabel:0}),o._25(603979776,2,{_buttons:1}),o._25(603979776,3,{_icons:1}),o._4(16384,null,0,P.a,[],null,null),(l()(),o._27(2,["\n          ","","\n        "]))],null,function(l,n){l(n,6,0,n.context.$implicit.id,n.context.$implicit.name)})}function t(l){return o._29(0,[(l()(),o._27(null,["\n"])),(l()(),o._6(0,null,null,10,"ion-header",[],null,null,null,null,null)),o._4(16384,null,0,w.a,[j.a,o.k,o.E,[2,x.a]],null,null),(l()(),o._27(null,["\n\n  "])),(l()(),o._6(0,null,null,6,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,B.b,B.a)),o._4(49152,null,0,F.a,[I.a,[2,x.a],[2,z.a],j.a,o.k,o.E],null,null),(l()(),o._27(3,["\n    "])),(l()(),o._6(0,null,3,2,"ion-title",[],null,null,null,L.b,L.a)),o._4(49152,null,0,T.a,[j.a,o.k,o.E,[2,D.a],[2,F.a]],null,null),(l()(),o._27(0,["person"])),(l()(),o._27(3,["\n  "])),(l()(),o._27(null,["\n\n"])),(l()(),o._27(null,["\n"])),(l()(),o._6(0,null,null,13,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],[["window","resize"]],function(l,n,u){var a=!0;return"window:resize"===n&&(a=!1!==o._20(l,14).resize()&&a),a},M.b,M.a)),o._4(4374528,null,0,V.a,[j.a,$.a,J.a,o.k,o.E,I.a,K.a,o.x,[2,x.a],[2,z.a]],null,null),(l()(),o._27(1,["\n    "])),(l()(),o._6(0,null,1,5,"ion-list",[],null,null,null,null,null)),o._4(16384,null,0,N.a,[j.a,o.k,o.E,$.a,R.l,J.a],null,null),(l()(),o._27(null,["\n        "])),(l()(),o._0(16777216,null,null,1,null,a)),o._4(802816,null,0,U.h,[o.O,o.K,o.r],{ngForOf:[0,"ngForOf"],ngForTrackBy:[1,"ngForTrackBy"]},null),(l()(),o._27(null,["\n      "])),(l()(),o._27(1,["\n      "])),(l()(),o._6(0,null,1,2,"button",[["ion-button",""]],null,[[null,"click"]],function(l,n,u){var a=!0,t=l.component;return"click"===n&&(a=!1!==t.changeId()&&a),a},Y.b,Y.a)),o._4(1097728,null,0,q.a,[[8,""],j.a,o.k,o.E],null,null),(l()(),o._27(0,["点击"])),(l()(),o._27(1,["\n"])),(l()(),o._27(null,["\n"]))],function(l,n){var u=n.component;l(n,20,0,u.items,u.trackById)},function(l,n){l(n,4,0,o._20(n,5)._hidden,o._20(n,5)._sbPadding),l(n,13,0,o._20(n,14).statusbarPadding,o._20(n,14)._hasRefresher)})}Object.defineProperty(n,"__esModule",{value:!0});var o=u(0),e=u(5),s=u(53),i=function(){function l(l,n){this.navCtrl=l,this.navParams=n,this.items=[{id:1,name:"张三"},{id:2,name:"李四"},{id:3,name:"王五"},{id:4,name:"赵六"}]}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad PersonPage")},l.prototype.trackById=function(l,n){return n.id},l.prototype.changeId=function(){this.items[0].id=100},l}();i=Object(e.__decorate)([Object(o.i)({selector:"page-person",templateUrl:"person.html"}),Object(e.__metadata)("design:paramtypes",["function"==typeof(c=void 0!==s.h&&s.h)&&c||Object,"function"==typeof(r=void 0!==s.i&&s.i)&&r||Object])],i);var c,r,_=function(){return function(){}}();_=Object(e.__decorate)([Object(o.u)({declarations:[i],imports:[s.e.forChild(i)]})],_);var b=u(187),d=u(188),k=u(189),g=u(190),f=u(191),p=u(192),m=u(193),h=u(194),v=u(195),y=u(121),C=u(17),E=u(14),j=u(1),O=u(38),P=u(55),w=u(119),x=u(4),B=u(238),F=u(42),I=u(8),z=u(20),L=u(237),T=u(117),D=u(35),M=u(196),V=u(21),$=u(3),J=u(9),K=u(24),N=u(43),R=u(6),U=u(13),Y=u(34),q=u(19),A=u(10),G=[],H=o._3({encapsulation:2,styles:G,data:{}}),Q=o._1("page-person",i,function(l){return o._29(0,[(l()(),o._6(0,null,null,1,"page-person",[],null,null,null,t,H)),o._4(49152,null,0,i,[z.a,A.a],null,null)],null,null)},{},{},[]),S=u(16),W=u(118),X=u(37);u.d(n,"PersonPageModuleNgFactory",function(){return Z});var Z=o._2(_,[],function(l){return o._17([o._18(512,o.j,o.Y,[[8,[b.a,d.a,k.a,g.a,f.a,p.a,m.a,h.a,v.a,Q]],[3,o.j],o.v]),o._18(4608,U.k,U.j,[o.t]),o._18(4608,S.k,S.k,[]),o._18(4608,S.c,S.c,[]),o._18(512,U.b,U.b,[]),o._18(512,S.j,S.j,[]),o._18(512,S.d,S.d,[]),o._18(512,S.i,S.i,[]),o._18(512,W.a,W.a,[]),o._18(512,W.b,W.b,[]),o._18(512,_,_,[]),o._18(256,X.a,i,[])])})},237:function(l,n,u){"use strict";function a(l){return t._29(2,[(l()(),t._6(0,null,null,2,"div",[["class","toolbar-title"]],null,null,null,null,null)),t._4(278528,null,0,o.g,[t.r,t.s,t.k,t.E],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t._19(null,0)],function(l,n){l(n,1,0,"toolbar-title","toolbar-title-"+n.component._mode)},null)}u.d(n,"a",function(){return s}),n.b=a;var t=u(0),o=u(13),e=(u(117),u(1),u(35),u(42),[]),s=t._3({encapsulation:2,styles:e,data:{}})},238:function(l,n,u){"use strict";function a(l){return t._29(0,[(l()(),t._6(0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),t._4(278528,null,0,o.g,[t.r,t.s,t.k,t.E],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),t._6(0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,u){var a=!0,t=l.component;return"click"===n&&(a=!1!==t.backButtonClick(u)&&a),a},e.b,e.a)),t._4(278528,null,0,o.g,[t.r,t.s,t.k,t.E],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t._4(1097728,null,0,s.a,[[8,"bar-button"],i.a,t.k,t.E],null,null),(l()(),t._6(0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),t._4(278528,null,0,o.g,[t.r,t.s,t.k,t.E],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t._4(147456,null,0,c.a,[i.a,t.k,t.E],{name:[0,"name"]},null),(l()(),t._6(0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),t._4(278528,null,0,o.g,[t.r,t.s,t.k,t.E],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),t._27(null,["",""])),t._19(null,0),t._19(null,1),t._19(null,2),(l()(),t._6(0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),t._4(278528,null,0,o.g,[t.r,t.s,t.k,t.E],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t._19(null,3)],function(l,n){var u=n.component;l(n,1,0,"toolbar-background","toolbar-background-"+u._mode);l(n,3,0,"back-button","back-button-"+u._mode);l(n,6,0,"back-button-icon","back-button-icon-"+u._mode),l(n,7,0,u._bbIcon);l(n,9,0,"back-button-text","back-button-text-"+u._mode);l(n,15,0,"toolbar-content","toolbar-content-"+u._mode)},function(l,n){var u=n.component;l(n,2,0,u._hideBb),l(n,5,0,t._20(n,7)._hidden),l(n,10,0,u._backText)})}u.d(n,"a",function(){return _}),n.b=a;var t=u(0),o=u(13),e=(u(42),u(34)),s=u(19),i=u(1),c=u(36),r=(u(8),u(4),u(20),[]),_=t._3({encapsulation:2,styles:r,data:{}})}});
+webpackJsonp([4],{
+
+/***/ 270:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PersonPageModule", function() { return PersonPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__person__ = __webpack_require__(281);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var PersonPageModule = (function () {
+    function PersonPageModule() {
+    }
+    return PersonPageModule;
+}());
+PersonPageModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__person__["a" /* PersonPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__person__["a" /* PersonPage */]),
+        ],
+    })
+], PersonPageModule);
+
+//# sourceMappingURL=person.module.js.map
+
+/***/ }),
+
+/***/ 281:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PersonPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(39);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the PersonPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var PersonPage = (function () {
+    function PersonPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.items = [
+            {
+                id: 1,
+                name: '张三',
+            },
+            {
+                id: 2,
+                name: '李四',
+            },
+            {
+                id: 3,
+                name: '王五',
+            },
+            {
+                id: 4,
+                name: '赵六',
+            }
+        ];
+    }
+    PersonPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad PersonPage');
+    };
+    PersonPage.prototype.trackById = function (index, item) { return item['id']; };
+    PersonPage.prototype.changeId = function () {
+        this.items[0]['id'] = 100;
+    };
+    return PersonPage;
+}());
+PersonPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-person',template:/*ion-inline-start:"D:\12\myapp\src\pages\person\person.html"*/'<!--\n  Generated template for the PersonPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>person</ion-title>\n  </ion-navbar>\n\n</ion-header>\n<ion-content padding>\n    <ion-list >\n        <ion-item *ngFor="let item of items;trackBy: trackById" >\n          {{item.id}}{{item.name}}\n        </ion-item>\n      </ion-list>\n      <button ion-button (click)="changeId()">点击</button>\n</ion-content>\n'/*ion-inline-end:"D:\12\myapp\src\pages\person\person.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
+], PersonPage);
+
+//# sourceMappingURL=person.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=4.js.map

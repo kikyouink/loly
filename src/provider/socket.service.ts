@@ -33,36 +33,34 @@ export class SocketService {
     search(val){
         this.socket.emit('search', { username: val});
     }
+    abc:Promise<Text>;
     onInit(){
         this.socket.on('signSuccess', () => {
-            this.sign_result=true;
-            console.log(this.n++);
+            this.sign_result=true; 
             this.is.createT('注册成功');
         });
         this.socket.on('isExits', () => {
             this.sign_result=false;
-            this.is.createT('此用户已存在');
-            console.log(this.n++);
+            this.is.createT('此用户已存在');  
         })
         this.socket.on('loginSuccess', () => {
             this.login_result=true;
-            this.is.createT('登录成功');
-            console.log(this.n++);
+            this.is.createT('登录成功');          
         });
         this.socket.on('loginFailed', () => {
             this.login_result=false;
-            this.is.createT('登录失败');
-            console.log(this.n++);
+            this.is.createT('登录失败');  
         });
         this.socket.on('privateMsg',(msg)=>{
-            this.is.createT('私人信息:'+msg);
-            console.log(msg);
-            console.log(this.n++);
-        })
+            this.abc=Promise.resolve(msg);
+        });
+        // this.socket.on('privateMsg',(msg)=>{
+        //     this.is.createT('私人信息:'+msg);
+        //     console.log(msg);           
+        // })
         this.socket.on('publicMsg',(msg)=>{
             this.is.createT('公共信息:'+msg);
-            console.log(msg);
-            console.log(this.n++);
+            console.log(msg);           
         })
         this.socket.on('searchResult', (userdata) => {       
             if(userdata=='无结果'){

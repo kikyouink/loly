@@ -74,29 +74,29 @@
   //新桥
   .theme-blue {
     ion-header{
-        background:color($colors,primary) ;
+        background:$primary ;
         .toolbar-background{
-            background:color($colors,primary) ;
+            background:$primary ;
         }
         .toolbar-title,.back-button-icon{
             color: white
         }
     }
     #headDiv{
-        background:color($colors,primary) ;  
+        background:$primary ;  
     }
     ion-fab{
       .fab{
-        background-color: color($colors,primary) ;
+        background-color: $primary ;
     }
     }
     //color
     ion-tabs{
       .tab-button[aria-selected=true] .tab-button-icon{
-          color: color($colors,primary) ;
+          color: $primary ;
       }
       .tab-button[aria-selected=true] {
-          color: color($colors,primary) ;
+          color: $primary ;
       }
       .tab-button{
           color: gray ;
@@ -215,9 +215,9 @@
     background:#f97398;
 }
   ion-header{
-    background:color($colors,bili);
+    background:$bili;
     .toolbar-background{
-        background:color($colors,bili);
+        background:$bili;
     }
     .toolbar-title,.back-button-icon{
         color: white
@@ -225,21 +225,21 @@
 }
   ion-tabs{
     .tab-button[aria-selected=true] .tab-button-icon{
-        color: color($colors,bili) ;
+        color: $bili ;
     }
     .tab-button[aria-selected=true] {
-        color: color($colors,bili) ;
+        color: $bili ;
     }
     .tab-button{
         color: gray ;
     }
     .button-round.button-full{
-      background:color($colors,bili) ; 
+      background:$bili ; 
     }
 }
 ion-fab{
     .fab{
-        background-color: color($colors,bili) ;
+        background-color: $bili ;
     }
 }
 }
