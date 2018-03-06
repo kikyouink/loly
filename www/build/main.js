@@ -175,7 +175,7 @@ var map = {
 		7
 	],
 	"../pages/login/login.module": [
-		267,
+		270,
 		1
 	],
 	"../pages/main/main.module": [
@@ -183,11 +183,11 @@ var map = {
 		6
 	],
 	"../pages/news/news.module": [
-		269,
+		267,
 		5
 	],
 	"../pages/person/person.module": [
-		270,
+		269,
 		4
 	],
 	"../pages/sign/sign.module": [
@@ -195,11 +195,11 @@ var map = {
 		0
 	],
 	"../pages/tabs/tabs.module": [
-		272,
+		273,
 		3
 	],
 	"../pages/theme/theme.module": [
-		273,
+		272,
 		2
 	]
 };
@@ -283,13 +283,13 @@ AppModule = __decorate([
                 links: [
                     { loadChildren: '../pages/chat/chat.module#ChatPageModule', name: 'ChatPage', segment: 'chat', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/contact/contact.module#ContactPageModule', name: 'ContactPage', segment: 'contact', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/main/main.module#MainPageModule', name: 'MainPage', segment: 'main', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/news/news.module#NewsPageModule', name: 'NewsPage', segment: 'news', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/main/main.module#MainPageModule', name: 'MainPage', segment: 'main', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/person/person.module#PersonPageModule', name: 'PersonPage', segment: 'person', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/sign/sign.module#SignPageModule', name: 'SignPage', segment: 'sign', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/theme/theme.module#ThemePageModule', name: 'ThemePage', segment: 'theme', priority: 'low', defaultHistory: [] }
+                    { loadChildren: '../pages/theme/theme.module#ThemePageModule', name: 'ThemePage', segment: 'theme', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] }
                 ]
             })
         ],
@@ -505,10 +505,9 @@ var SocketService = (function () {
 }());
 SocketService = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__inform_service__["a" /* InformService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__inform_service__["a" /* InformService */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__inform_service__["a" /* InformService */]])
 ], SocketService);
 
-var _a;
 //# sourceMappingURL=socket.service.js.map
 
 /***/ })
